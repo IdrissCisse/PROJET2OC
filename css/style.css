@@ -473,6 +473,34 @@ form button {
     margin: 0;
 }
 
+/***** Footer *****/
+footer {
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+    max-height: 163px;
+    background-color: #F2F2F2;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    padding: 20px;
+    height: 100%;
+}
+
+.footer-div h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer-div p {
+    margin: 0;
+    font-size: 16px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
