@@ -637,4 +637,19 @@ footer {
         width: 17px;
         height: 17px;
     }
+
+    .search-filter {
+        max-height: 161px;
+    }
+    
+    .filter-list {
+        flex-wrap:wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+
+    .filter-list button {
+        max-width: 162.5px;
+        flex-grow: 1;
+    }
 }
