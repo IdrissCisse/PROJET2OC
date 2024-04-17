@@ -298,8 +298,7 @@ form button {
 }
 
 .search-info p {
-    width: 1306px;
-    height: 19px;
+    width: 100%;
     font-size: 16px;
 }
 /****** Hebergements And Populaires ***********/
@@ -577,9 +576,12 @@ footer {
 @media (max-width: 767.98px) {
     /* ... */
 
-    main {
+    main{
         padding: 0;
-        width: 100%;
+    }
+
+    body {
+        margin: 0;
     }
 
     /*** Header ***/
@@ -615,10 +617,15 @@ footer {
     .main-search {
         max-height: 432px;
         padding: 0 20px;
+        width: auto;
     }
 
     .search-text {
         max-height: 79px;
+    }
+
+    form {
+        width: fit-content;
     }
 
     form button {
@@ -629,7 +636,7 @@ footer {
     }
 
     form::before {
-        right: 122px;
+        right: 39px;
         z-index: 0;
     }
 
@@ -657,26 +664,31 @@ footer {
     .filter-list button {
         max-width: 162.5px;
         flex-grow: 1;
+        font-size: 14px;
     }
 
     .search-info {
-        max-height: 38px;
+        height: 38px;
+    }
+
+    .search-info p {
+        margin: 0;
     }
 
     /*** Hebergerments and Populaires ***/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        max-height: 2019.5px;
+        margin-top: 35px;    
     }
 
-    .populaires {
+   .populaires {
         padding: 30px 20px;
-        margin-top: 35px;
         width: 100%;
         max-height: 569px;
+        margin-top: 0;
     }
 
-    .populaires-cards {
+     .populaires-cards {
         flex-direction: column;
         width: 100%;
         gap: 15px;
@@ -737,5 +749,26 @@ footer {
 
     .activites-cards .card-title {
         font-size: 16px;
+    }
+
+    footer {
+        max-height: 461px;
+        padding: 0;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        max-height: 461px;
+        padding: 30px;
+        gap: 50px;
+        width: auto;
+    }
+
+    .footer-div {
+        width: 100%;
+        padding: 0;
+        max-width: 263.67px;
     }
 }
