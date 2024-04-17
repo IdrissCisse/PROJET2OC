@@ -712,4 +712,30 @@ footer {
     .hebergements-cards a {
         width: 100%;
     }
+
+    /* Activites à Marseille */
+    .activites {
+        margin-top: 0;
+        max-height: 965.02px;
+        width: 100%;
+    }
+
+    .activites-cards {
+        flex-direction: column;
+        gap: 15px;
+        max-height: 845px;
+    }
+
+    .activites-cards a {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    .activites-cards img {
+        height: 141px;
+    }
+
+    .activites-cards .card-title {
+        font-size: 16px;
+    }
 }
