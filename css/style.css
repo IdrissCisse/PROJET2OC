@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -580,10 +581,6 @@ footer {
         padding: 0;
     }
 
-    body {
-        margin: 0;
-    }
-
     /*** Header ***/
     .main-header {
         flex-direction: column;
@@ -615,13 +612,13 @@ footer {
 
     /*** Partie Recherche ***/
     .main-search {
-        max-height: 432px;
+        max-height: 620px;
         padding: 0 20px;
         width: auto;
     }
 
     .search-text {
-        max-height: 79px;
+        max-height: 120px;
     }
 
     form {
@@ -652,7 +649,7 @@ footer {
     }
 
     .search-filter {
-        max-height: 161px;
+        max-height: 300px;
     }
     
     .filter-list {
