@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -16,7 +17,6 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 .main-container {
@@ -31,7 +31,6 @@ a {
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
 }
 
@@ -101,7 +100,7 @@ a {
     width: 100%;
     background-color: #0065FC;
 }
-
+/* Changement de couleur du texte au survol */
 .main-navigation a:hover{
     color: #0065FC;
 }
@@ -130,12 +129,10 @@ main {
 
 .search-text h2 {
     font-size: 22px;   
-    margin: 0;
 }
 
 .search-text p {
     font-size: 16px;
-    margin: 0;
 }
 
 /* Position relative pour simuler des bordures top et bottom limitées à la zone de saisie*/
@@ -194,6 +191,7 @@ form input:focus {
     outline: none;
 }
 
+/* Boutton "Rechercher" */
 form button {
     display: flex;
     align-items: center;
@@ -209,6 +207,7 @@ form button {
     border: 1px solid #0065FC;
 }
 
+/* Dissimuiation de l'icone "loupe" reservée à la version mobile */
 .fa-magnifying-glass {
    display: none;
 }
@@ -220,13 +219,10 @@ form button {
     align-items: center;
     max-width: 758px;
     max-height: 50px;
-    margin: 0;
 }
 
 .search-filter h3 {
-    font-weight:700 ;
     font-size: 18px;
-    margin: 0;
 }
 
 .filter-list {
@@ -302,6 +298,7 @@ form button {
     width: 100%;
     font-size: 16px;
 }
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -323,10 +320,6 @@ form button {
     padding: 30px;
     border-radius: 15px;
     background-color: var(--main-bg-color);
-}
-
-.hebergements h2{
-    margin: 0;
 }
 
 .hebergements-cards {
@@ -364,22 +357,9 @@ form button {
     padding: 0 15px; 
 }
     
-.hebergements-cards .card-title{
-    margin: 0; 
-}
-
 .hebergements-cards .card-subtitle {
-    margin: 0;
     font-size: 14px;
     text-wrap:nowrap;
-}
-
-.hebergements-cards .card-rating {
-    margin: 0;
-}
-
-.card-texte {
-    margin: 0;
 }
 
 /****** Populaires ***********/
@@ -424,10 +404,6 @@ form button {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
@@ -442,10 +418,6 @@ form button {
     margin-top: 35px;
     padding: 30px;
     box-sizing: border-box;
-}
-
-.activites h2 {
-    margin: 0;
 }
 
 .activites-cards {
@@ -480,11 +452,6 @@ form button {
     border-radius: 0 0 20px 20px;
     padding: 20px 19px 20px 19px;
     box-sizing: border-box;
-    
-}
-
-.activites-cards .card-title {
-    margin: 0;
 }
 
 /***** Footer *****/
@@ -499,6 +466,7 @@ footer {
     background-color: #F2F2F2;
 }
 
+/* Chaque div occupe la meme largeur dans le div parent */
 .footer-div {
     display: flex;
     flex-direction: column;
@@ -506,11 +474,6 @@ footer {
     flex: 1;
     padding: 20px;
     height: 100%;
-}
-
-.footer-div h3,
-.footer-div a {
-    margin: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -632,11 +595,13 @@ footer {
         z-index: 1;            
     }
 
+    /* Placement de la bordure en dessous de l'ombre du boutton*/
     form::before {
         right: 39px;
         z-index: 0;
     }
 
+    /* Dissimilation du texte " Rechercher " , remplacé par la loupe */
     .text-button {
         display: none;
     }
@@ -666,10 +631,6 @@ footer {
 
     .search-info {
         height: 38px;
-    }
-
-    .search-info p {
-        margin: 0;
     }
 
     /*** Hebergerments and Populaires ***/
